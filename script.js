@@ -1,18 +1,18 @@
 const promiseData = {
   nudity: {
-    mode: "Campaign slogan",
-    title: "\"A goddess brave enough to change the rules.\"",
-    text: "The Aphrodite of Knidos became famous because it offered one of the first life-size nude female divine bodies in Greek sculpture. Earlier Greek sculptural nudity was strongly associated with the heroic male body; this image made Aphrodite's exposed body the centre of religious, aesthetic, and social attention."
+    mode: "Art-history evidence",
+    title: "The Knidian Aphrodite marks a radical departure.",
+    text: "The Aphrodite of Knidos is often identified as the first major nude female statue in Greek art. This moves away from earlier traditions in which female divinities were typically shown fully clothed."
   },
   pose: {
     mode: "Art-history proof",
-    title: "Contrapposto makes persuasion feel natural.",
-    text: "Her shifted weight creates a gentle S-curve rather than a rigid frontal body. The pose lets the sculpture seem private and momentary, as if the viewer has arrived during a ritual bath. That controlled imbalance is the campaign's strongest visual tactic."
+    title: "Contrapposto creates a softer divine body.",
+    text: "Her shifting weight creates a naturalistic S-curve in the body. This reflects Classical interest in rhythm, movement, and a softer, more human-centered divine presence."
   },
   viewer: {
-    mode: "Reception strategy",
-    title: "The viewer is part of the artwork.",
-    text: "The modest gesture both hides and emphasizes the body. Aphrodite's power comes from this tension: the viewer is invited to look, but the sculpture also makes that looking feel charged, deliberate, and morally complicated."
+    mode: "Viewer engagement",
+    title: "Controlled vulnerability draws attention.",
+    text: "The figure is shown in a moment of modest gesture, covering herself as if interrupted. This creates intimacy and immediacy while drawing attention to her body and the tension between exposure and concealment."
   },
   grain: {
     mode: "Campaign claim",
@@ -118,11 +118,11 @@ function updateVerdict() {
     return;
   }
   if (value < 38) {
-    verdict.textContent = "The Artemision god is winning this round: heroic scale, bronze extension, and outward action dominate the room.";
+    verdict.textContent = "The Artemision god is winning this round: heroic anatomy, bronze extension, and outward action dominate the room.";
   } else if (value > 68) {
-    verdict.textContent = "Aphrodite dominates the vote: controlled vulnerability, polished surface, and viewer awareness become stronger than spectacle.";
+    verdict.textContent = "Aphrodite dominates the vote: controlled vulnerability, polished marble surface, and intimacy become stronger than spectacle.";
   } else {
-    verdict.textContent = "Aphrodite leads by intimacy: her contrapposto stance and modest gesture turn looking into a controlled encounter.";
+    verdict.textContent = "Aphrodite leads by intimacy: her contrapposto stance and modest gesture turn looking into a controlled visual encounter.";
   }
 }
 
