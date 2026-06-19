@@ -27,7 +27,7 @@ const promiseData = {
   ritual: {
     mode: "Context strategy",
     title: "Eleusis makes the campaign bigger than one object.",
-    text: "Demeter's imagery depends on sacred context. At Eleusis, art, procession, initiation, agriculture, and myth work together, which fits the lecture emphasis on reading artworks through archaeological and ritual setting."
+    text: "Demeter's imagery depends on sacred context. At Eleusis, art, procession, initiation, agriculture, and myth work together, which fits the course emphasis on reading artworks through archaeological and ritual setting."
   }
 };
 
