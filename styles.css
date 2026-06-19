@@ -456,6 +456,10 @@ button {
   padding: 0 clamp(1rem, 3vw, 1.5rem) clamp(1rem, 3vw, 1.5rem);
 }
 
+.exhibit-card .file-content {
+  padding: clamp(1rem, 3vw, 1.5rem);
+}
+
 .file-content img {
   width: 100%;
   aspect-ratio: 4 / 3;

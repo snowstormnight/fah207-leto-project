@@ -17,17 +17,17 @@ const promiseData = {
   grain: {
     mode: "Campaign claim",
     title: "\"A goddess who makes survival visible.\"",
-    text: "Demeter's strongest visual attribute is grain. In art, wheat or grain is not just decoration: it turns divine power into something concrete, showing that agriculture, nourishment, and civic stability depend on the goddess."
+    text: "Demeter's strongest sign is grain. Wheat is small, but it carries the whole argument: nourishment, storage, farming, civic stability, and the daily proof that divine power can enter ordinary life."
   },
   torch: {
-    mode: "Iconographic proof",
+    mode: "Search signal",
     title: "The torch turns grief into ritual movement.",
     text: "Torches connect Demeter and Persephone to searching, initiation, and the movement between loss and return. The attribute helps viewers read the myth visually, even before a long explanation begins."
   },
   ritual: {
-    mode: "Context strategy",
-    title: "Eleusis makes the campaign bigger than one object.",
-    text: "Demeter's imagery depends on sacred context. At Eleusis, art, procession, initiation, agriculture, and myth work together, so the object cannot be separated from ritual setting."
+    mode: "Sacred network",
+    title: "Eleusis turns Demeter into a public force.",
+    text: "At Eleusis, Demeter is not a private household wish. Her signs become public: torches, gathering, movement, grain, daughter, and return all work together as proof that her power reaches an entire community."
   }
 };
 
@@ -43,7 +43,7 @@ const timelineSets = {
       image: "https://commons.wikimedia.org/wiki/Special:FilePath/Aphrodite%20of%20Knidos%2C%20Roman%20copy%2C%204th%20century%20AD.jpg",
       alt: "Roman copy of Aphrodite of Knidos",
       heading: "Copies turn the statue into a visual brand",
-      text: "The original Greek statue is lost, but Roman copies preserve the type and show how powerfully the image circulated. Repetition is useful for the campaign theme: Aphrodite survives because her visual formula is copied, recognized, and reinterpreted."
+      text: "The original Greek statue is lost, but Roman copies preserve the type and show how powerfully the image circulated. Aphrodite survives because her visual formula is copied, recognized, and reinterpreted."
     },
     {
       image: "https://commons.wikimedia.org/wiki/Special:FilePath/Sandro%20Botticelli%20-%20La%20nascita%20di%20Venere%20-%20Google%20Art%20Project%20-%20edited.jpg",
@@ -68,8 +68,8 @@ const timelineSets = {
     {
       image: "https://upload.wikimedia.org/wikipedia/commons/2/20/Great_Eleusinian_Relief.jpg",
       alt: "Great Eleusinian Relief",
-      heading: "Reception keeps the harvest story active",
-      text: "The Eleusinian scene was copied and reinterpreted, which makes Demeter fit the agency theme: her divine brand survives because later viewers keep returning to the same visual story."
+      heading: "The harvest story keeps returning",
+      text: "Demeter's power survives because the same signs stay readable: grain, torch, daughter, mortal receiver, and the promise that loss can become return."
     }
   ]
 };
