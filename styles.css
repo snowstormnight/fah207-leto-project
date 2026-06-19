@@ -217,7 +217,9 @@ button {
 .clients,
 .campaign,
 .compare,
+.theme-map,
 .method,
+.analysis-lab,
 .references {
   padding: clamp(4rem, 8vw, 7rem) clamp(1rem, 5vw, 5rem);
 }
@@ -325,6 +327,80 @@ button {
   color: #fff;
   background: var(--teal);
   font-weight: 900;
+}
+
+.theme-map,
+.analysis-lab {
+  background: #2d2520;
+  color: #fff;
+}
+
+.theme-map .section-heading > p:last-child,
+.analysis-lab .section-heading > p:last-child {
+  color: rgba(255, 255, 255, 0.72);
+}
+
+.theme-grid,
+.dossier-grid,
+.analysis-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.theme-grid article,
+.dossier-grid article,
+.analysis-grid article {
+  min-height: 250px;
+  padding: 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: 0 12px 30px rgba(55, 36, 21, 0.08);
+}
+
+.theme-grid article,
+.analysis-grid article {
+  border-color: rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.theme-grid span,
+.dossier-grid span {
+  display: inline-flex;
+  margin-bottom: 1rem;
+  color: var(--gold);
+  font-size: 0.78rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.theme-grid p,
+.analysis-grid p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.analysis-grid {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.dossier-grid article {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(255, 249, 241, 0.96));
+}
+
+.dossier-grid p {
+  color: var(--muted);
+}
+
+.verdict-section {
+  background: #fff;
+}
+
+.verdict-copy {
+  max-width: 900px;
+  color: var(--muted);
+  font-size: 1.12rem;
 }
 
 .campaign-stage {
@@ -605,6 +681,9 @@ footer p {
   .timeline-track,
   .client-grid,
   .method-grid,
+  .theme-grid,
+  .dossier-grid,
+  .analysis-grid,
   .evidence-grid,
   .reference-columns {
     grid-template-columns: 1fr;
@@ -628,7 +707,9 @@ footer p {
   .clients,
   .campaign,
   .compare,
+  .theme-map,
   .method,
+  .analysis-lab,
   .references {
     padding-inline: 1rem;
   }
