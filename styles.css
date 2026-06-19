@@ -1,0 +1,645 @@
+:root {
+  --ink: #1f1d1b;
+  --muted: #68625d;
+  --paper: #fff9f1;
+  --panel: #ffffff;
+  --rose: #c7365f;
+  --wine: #6f1d3b;
+  --gold: #c9932c;
+  --teal: #147f7b;
+  --bronze: #8c642d;
+  --line: rgba(31, 29, 27, 0.14);
+  --shadow: 0 20px 60px rgba(48, 31, 20, 0.18);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+}
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.75rem clamp(1rem, 3vw, 2.25rem);
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 249, 241, 0.92);
+  backdrop-filter: blur(14px);
+}
+
+.brand,
+nav {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.brand {
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.brand-mark {
+  display: grid;
+  width: 2.1rem;
+  height: 2.1rem;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--wine);
+  font-size: 0.78rem;
+}
+
+nav a {
+  border-radius: 999px;
+  padding: 0.45rem 0.7rem;
+  color: var(--muted);
+  font-size: 0.92rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: var(--ink);
+  background: rgba(199, 54, 95, 0.1);
+}
+
+.hero {
+  position: relative;
+  min-height: calc(100vh - 60px);
+  display: grid;
+  align-items: end;
+  overflow: hidden;
+  background: #2e1b1c;
+}
+
+.hero-backdrop {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, rgba(23, 13, 18, 0.86), rgba(23, 13, 18, 0.34) 54%, rgba(23, 13, 18, 0.08)),
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Sandro%20Botticelli%20-%20La%20nascita%20di%20Venere%20-%20Google%20Art%20Project%20-%20edited.jpg") center 34% / cover;
+  transform: scale(1.02);
+}
+
+.agency-backdrop {
+  background:
+    linear-gradient(90deg, rgba(23, 13, 18, 0.9), rgba(23, 13, 18, 0.42) 56%, rgba(23, 13, 18, 0.16)),
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Sandro%20Botticelli%20-%20La%20nascita%20di%20Venere%20-%20Google%20Art%20Project%20-%20edited.jpg") center 30% / cover;
+}
+
+.aphrodite-backdrop {
+  background:
+    linear-gradient(90deg, rgba(63, 17, 39, 0.92), rgba(63, 17, 39, 0.48) 54%, rgba(63, 17, 39, 0.08)),
+    url("https://commons.wikimedia.org/wiki/Special:FilePath/Cnidus%20Aphrodite%20Altemps%20Inv8619.jpg") center 18% / cover;
+}
+
+.hero-content {
+  position: relative;
+  width: min(760px, calc(100% - 2rem));
+  margin: 0 0 clamp(4rem, 12vh, 7rem) clamp(1rem, 7vw, 6rem);
+  color: #fff;
+}
+
+.kicker,
+.section-label {
+  margin: 0 0 0.6rem;
+  color: var(--rose);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0;
+  text-transform: uppercase;
+}
+
+.hero .kicker {
+  color: #f4c66f;
+}
+
+h1,
+h2,
+h3,
+p {
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(4rem, 11vw, 9rem);
+  line-height: 0.9;
+  letter-spacing: 0;
+}
+
+h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 4.4rem);
+  line-height: 1.02;
+  letter-spacing: 0;
+}
+
+h3 {
+  margin: 0 0 0.6rem;
+  font-size: clamp(1.1rem, 2vw, 1.55rem);
+  line-height: 1.18;
+  letter-spacing: 0;
+}
+
+.hero-copy {
+  max-width: 40rem;
+  margin: 1.2rem 0 1.7rem;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+}
+
+.hero-actions,
+.promise-buttons,
+.ad-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.button,
+button {
+  min-height: 2.7rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 0.72rem 1rem;
+  font: inherit;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.primary {
+  color: #fff;
+  border-color: var(--rose);
+  background: var(--rose);
+}
+
+.ghost {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.band,
+.clients,
+.campaign,
+.compare,
+.method,
+.references {
+  padding: clamp(4rem, 8vw, 7rem) clamp(1rem, 5vw, 5rem);
+}
+
+.band {
+  background: #fff;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(18rem, 1.1fr);
+  gap: clamp(2rem, 6vw, 6rem);
+}
+
+.about-text {
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.section-heading {
+  max-width: 780px;
+  margin-bottom: 2rem;
+}
+
+.section-heading > p:last-child {
+  color: var(--muted);
+}
+
+.clients {
+  background:
+    linear-gradient(180deg, rgba(255, 249, 241, 0.96), rgba(255, 249, 241, 1)),
+    radial-gradient(circle at 20% 0%, rgba(199, 54, 95, 0.16), transparent 34%);
+}
+
+.client-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.client-card,
+.method-grid article {
+  min-height: 250px;
+  display: grid;
+  align-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: 0 12px 30px rgba(55, 36, 21, 0.08);
+}
+
+.client-card.featured {
+  color: #fff;
+  border-color: var(--wine);
+  background:
+    linear-gradient(145deg, rgba(111, 29, 59, 0.95), rgba(199, 54, 95, 0.92)),
+    var(--wine);
+}
+
+.client-card.featured p,
+.client-card.featured .client-topline span {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.client-card p,
+.method-grid p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.client-topline {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  color: var(--rose);
+  font-size: 0.8rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.client-topline strong {
+  color: currentColor;
+  font-size: 1rem;
+}
+
+.method-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.method-grid article {
+  min-height: 220px;
+}
+
+.method-grid span {
+  display: grid;
+  width: 2rem;
+  height: 2rem;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--teal);
+  font-weight: 900;
+}
+
+.campaign-stage {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.78fr) minmax(20rem, 1.22fr);
+  gap: clamp(1rem, 4vw, 3rem);
+  align-items: stretch;
+}
+
+.poster {
+  position: relative;
+  min-height: 560px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  background: var(--wine);
+}
+
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: sepia(0.24) saturate(1.04);
+}
+
+.poster::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, rgba(111, 29, 59, 0.88), rgba(111, 29, 59, 0.08) 58%);
+}
+
+.poster-copy {
+  position: absolute;
+  z-index: 1;
+  inset: auto 1.2rem 1.2rem;
+  color: #fff;
+}
+
+.poster-copy span,
+.poster-copy small {
+  display: block;
+}
+
+.poster-copy strong {
+  display: block;
+  margin: 0.25rem 0 0.5rem;
+  color: #ffd86f;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2.2rem, 5vw, 4.2rem);
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+.promise-panel,
+.timeline-display,
+.duel,
+.evidence-grid article,
+.reference-columns article {
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  box-shadow: 0 12px 30px rgba(55, 36, 21, 0.08);
+}
+
+.promise-panel {
+  display: grid;
+  align-content: start;
+  gap: 1.25rem;
+  padding: clamp(1.1rem, 3vw, 2rem);
+}
+
+.promise-tab {
+  color: var(--wine);
+  background: #fff4f6;
+}
+
+.promise-tab.active {
+  color: #fff;
+  border-color: var(--wine);
+  background: var(--wine);
+}
+
+.promise-copy {
+  min-height: 280px;
+  display: grid;
+  align-content: center;
+  padding: clamp(1rem, 4vw, 3rem);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(20, 127, 123, 0.1), rgba(199, 54, 95, 0.12)),
+    #fff;
+}
+
+.promise-copy p:last-child {
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.timeline-track {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.time-card {
+  display: grid;
+  justify-items: start;
+  min-height: 7rem;
+  border-radius: 8px;
+  color: var(--ink);
+  background: #f7efe3;
+  text-align: left;
+}
+
+.time-card span {
+  display: grid;
+  width: 1.8rem;
+  height: 1.8rem;
+  place-items: center;
+  border-radius: 50%;
+  color: #fff;
+  background: var(--bronze);
+}
+
+.time-card.active {
+  border-color: var(--teal);
+  background: #e7f4f2;
+}
+
+.timeline-display {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.8fr) minmax(18rem, 1.2fr);
+  gap: clamp(1rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(1rem, 3vw, 2rem);
+}
+
+.timeline-display img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #eadfce;
+}
+
+.timeline-display p {
+  color: var(--muted);
+}
+
+.duel {
+  display: grid;
+  grid-template-columns: minmax(13rem, 1fr) minmax(15rem, 0.8fr) minmax(13rem, 1fr);
+  gap: 1rem;
+  align-items: stretch;
+  padding: 1rem;
+}
+
+.duel-image {
+  display: grid;
+  align-content: space-between;
+  gap: 0.75rem;
+  min-height: 430px;
+  margin: 0;
+}
+
+.duel-image img {
+  width: 100%;
+  height: 370px;
+  border-radius: 6px;
+  object-fit: cover;
+  background: #fff;
+}
+
+.duel-image figcaption {
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+
+.duel-control {
+  display: grid;
+  align-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #2d2520;
+  color: #fff;
+}
+
+.duel-control label {
+  color: #f4c66f;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+input[type="range"] {
+  width: 100%;
+  accent-color: var(--rose);
+}
+
+.evidence-grid,
+.reference-columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.evidence-grid article,
+.reference-columns article {
+  padding: 1.2rem;
+}
+
+.evidence-grid p,
+.reference-columns p,
+.reference-columns li {
+  color: var(--muted);
+}
+
+.interactive-links {
+  display: grid;
+  grid-template-columns: minmax(14rem, 0.7fr) minmax(18rem, 1.3fr);
+  gap: clamp(1rem, 4vw, 3rem);
+  align-items: start;
+}
+
+.ad-links button {
+  color: var(--rose);
+  background: #fff;
+}
+
+.toast {
+  min-height: 3.5rem;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-left: 4px solid var(--teal);
+  background: #e7f4f2;
+  color: #24524f;
+  font-weight: 700;
+}
+
+footer {
+  padding: 2rem clamp(1rem, 5vw, 5rem);
+  color: #fff;
+  background: var(--ink);
+}
+
+footer p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.76);
+}
+
+@media (max-width: 860px) {
+  .site-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  nav {
+    width: 100%;
+    overflow-x: auto;
+    padding-bottom: 0.25rem;
+  }
+
+  .hero-content {
+    margin-left: 1rem;
+  }
+
+  .about-grid,
+  .campaign-stage,
+  .timeline-display,
+  .duel,
+  .interactive-links {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-track,
+  .client-grid,
+  .method-grid,
+  .evidence-grid,
+  .reference-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .poster {
+    min-height: 430px;
+  }
+
+  .duel-image {
+    min-height: auto;
+  }
+
+  .duel-image img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 520px) {
+  .band,
+  .clients,
+  .campaign,
+  .compare,
+  .method,
+  .references {
+    padding-inline: 1rem;
+  }
+
+  .button,
+  button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 3.8rem;
+  }
+}
