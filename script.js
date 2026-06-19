@@ -1,11 +1,11 @@
 const promiseData = {
   nudity: {
-    mode: "Art-history evidence",
+    mode: "Visual evidence",
     title: "The Knidian Aphrodite marks a radical departure.",
     text: "The Aphrodite of Knidos is often identified as the first major nude female statue in Greek art. This moves away from earlier traditions in which female divinities were typically shown fully clothed."
   },
   pose: {
-    mode: "Art-history proof",
+    mode: "Visual proof",
     title: "Contrapposto creates a softer divine body.",
     text: "Her shifting weight creates a naturalistic S-curve in the body. This reflects Classical interest in rhythm, movement, and a softer, more human-centered divine presence."
   },
@@ -27,7 +27,7 @@ const promiseData = {
   ritual: {
     mode: "Context strategy",
     title: "Eleusis makes the campaign bigger than one object.",
-    text: "Demeter's imagery depends on sacred context. At Eleusis, art, procession, initiation, agriculture, and myth work together, which fits the course emphasis on reading artworks through archaeological and ritual setting."
+    text: "Demeter's imagery depends on sacred context. At Eleusis, art, procession, initiation, agriculture, and myth work together, so the object cannot be separated from ritual setting."
   }
 };
 
