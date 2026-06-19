@@ -119,6 +119,12 @@ nav a:focus-visible {
     url("https://commons.wikimedia.org/wiki/Special:FilePath/Cnidus%20Aphrodite%20Altemps%20Inv8619.jpg") center 18% / cover;
 }
 
+.demeter-backdrop {
+  background:
+    linear-gradient(90deg, rgba(31, 39, 18, 0.92), rgba(56, 54, 28, 0.58) 54%, rgba(56, 54, 28, 0.12)),
+    url("https://upload.wikimedia.org/wikipedia/commons/2/20/Great_Eleusinian_Relief.jpg") center 18% / cover;
+}
+
 .hero-content {
   position: relative;
   width: min(760px, calc(100% - 2rem));
@@ -205,6 +211,12 @@ button {
   color: #fff;
   border-color: var(--rose);
   background: var(--rose);
+}
+
+.secondary {
+  color: var(--teal);
+  border-color: rgba(20, 127, 123, 0.28);
+  background: #e7f4f2;
 }
 
 .ghost {
@@ -431,6 +443,14 @@ button {
   position: absolute;
   inset: 0;
   background: linear-gradient(0deg, rgba(111, 29, 59, 0.88), rgba(111, 29, 59, 0.08) 58%);
+}
+
+.demeter-poster {
+  background: #39331b;
+}
+
+.demeter-poster::after {
+  background: linear-gradient(0deg, rgba(57, 51, 27, 0.9), rgba(57, 51, 27, 0.08) 58%);
 }
 
 .poster-copy {
