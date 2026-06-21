@@ -135,3 +135,104 @@ document.querySelectorAll("[data-toast]").forEach((button) => {
     document.querySelector("#toast").textContent = button.dataset.toast;
   });
 });
+
+const sourceStack = document.querySelector("[data-source][data-count]");
+
+if (sourceStack) {
+  const source = sourceStack.dataset.source;
+  const count = Number(sourceStack.dataset.count);
+  for (let pageNumber = 1; pageNumber <= count; pageNumber += 1) {
+    const panel = document.createElement("figure");
+    const image = document.createElement("img");
+    const padded = String(pageNumber).padStart(2, "0");
+    panel.className = "source-panel";
+    image.src = `assets/source-pages/${source}/page-${padded}.png`;
+    image.alt = `${source} panel ${pageNumber}`;
+    image.loading = pageNumber > 2 ? "lazy" : "eager";
+    panel.append(image);
+    sourceStack.append(panel);
+  }
+}
+
+const providedConfigs = {
+  apollo: [
+    { marker: "Divine Rebrand Agency", images: ["assets/gods/apollo/1.png"] },
+    { marker: "Apollo Sauroktonos (c. 350 BCE)", images: ["assets/gods/apollo/2.png"] },
+    { marker: "Mantiklos Apollo (c. 700 BCE)", images: ["assets/gods/apollo/3.jpg"] },
+    { marker: "Kylix of Apollo (c. 460 BCE)", images: ["assets/gods/apollo/4.jpg"] },
+    { marker: "Temple of Apollo (Delphi, 330 BCE)", images: ["assets/gods/apollo/5.png"] },
+    { marker: "Comparison:", images: ["assets/gods/apollo/6.png", "assets/gods/apollo/7.jpg"] },
+    { marker: "Modern Example:", images: ["assets/gods/apollo/8.png"] },
+    { marker: "Sources:", images: [] }
+  ],
+  dionysus: [
+    { marker: "Divine Rebrand Agency", images: ["assets/gods/dionysus/image 1.jpg"] },
+    { marker: "Figure 2: Krater with Dionysus & Maenad, 385-360 BCE, British Museum", images: ["assets/gods/dionysus/image 2.jpg"] },
+    { marker: "The Francois Vase", images: ["assets/gods/dionysus/image 3.jpg"] },
+    { marker: "Still not convinced the lifestyle of Dionysus suits you?", images: [] },
+    { marker: "Sources", images: [] }
+  ],
+  aphrodite: [
+    { marker: "Divine Rebrand Agency", images: ["assets/gods/aphrodite/2.png", "assets/gods/aphrodite/3.jpg", "assets/gods/aphrodite/4.jpg"] },
+    { marker: "SOME DAZZLING WORKS OF ART DONE OF OUR GODDESS", images: ["assets/gods/aphrodite/5.jpg"] },
+    { marker: "\u201cSlipper Slapper\u201d (c. 100 B.C.E.)", images: ["assets/gods/aphrodite/6.jpg", "assets/gods/aphrodite/7.png", "assets/gods/aphrodite/8.jpg", "assets/gods/aphrodite/9.png"] },
+    { marker: "NOT CONVINCED? WELL, LETS COMPARE HER TO SOME OTHER GODS!", images: ["assets/gods/aphrodite/10.jpg", "assets/gods/aphrodite/11.jpg"] },
+    { marker: "MODERN MEDIA INVOLVING OUR GODDESS", images: ["assets/gods/aphrodite/12.jpg", "assets/gods/aphrodite/13.jpg", "assets/gods/aphrodite/14.jpg"] },
+    { marker: "References:", images: [] }
+  ],
+  zeus: [
+    { marker: "Titlezeus", images: ["assets/gods/zeus/Artwork 1,Zeus of Artemision.png"] },
+    { marker: "Artwork 1: Zeus of Artemision", images: ["assets/gods/zeus/Artwork 1,Zeus of Artemision.png", "assets/gods/zeus/Artwork 1, Zeus of Artemision, 2.png"] },
+    { marker: "Artwork 2: Head of Zeus from Mylasa", images: ["assets/gods/zeus/zeus head 1.png", "assets/gods/zeus/zeus head 2.png"] },
+    { marker: "Reference", images: [] }
+  ]
+};
+
+function splitProvidedText(text, config) {
+  const found = config
+    .map((item) => ({ ...item, index: text.indexOf(item.marker) }))
+    .filter((item) => item.index >= 0)
+    .sort((a, b) => a.index - b.index);
+
+  return found.map((item, index) => {
+    const next = found[index + 1];
+    return {
+      text: text.slice(item.index, next ? next.index : text.length),
+      images: item.images
+    };
+  });
+}
+
+const providedPage = document.querySelector("[data-provided-profile][data-transcript]");
+
+if (providedPage) {
+  fetch(providedPage.dataset.transcript)
+    .then((response) => response.text())
+    .then((text) => {
+      const profile = providedPage.dataset.providedProfile;
+      const sections = splitProvidedText(text, providedConfigs[profile] || []);
+      sections.forEach((section, index) => {
+        const article = document.createElement("article");
+        article.className = `provided-section ${index % 2 ? "reverse" : ""}`;
+
+        if (section.images.length) {
+          const gallery = document.createElement("div");
+          gallery.className = "provided-images";
+          section.images.forEach((src) => {
+            const image = document.createElement("img");
+            image.src = src;
+            image.alt = "";
+            image.loading = index > 1 ? "lazy" : "eager";
+            gallery.append(image);
+          });
+          article.append(gallery);
+        }
+
+        const copy = document.createElement("pre");
+        copy.className = "provided-copy";
+        copy.textContent = section.text;
+        article.append(copy);
+        providedPage.append(article);
+      });
+    });
+}

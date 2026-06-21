@@ -233,8 +233,132 @@ button {
   .method,
   .analysis-lab,
   .campaign-files,
-  .references {
+.references {
   padding: clamp(4rem, 8vw, 7rem) clamp(1rem, 5vw, 5rem);
+}
+
+.source-hero {
+  min-height: 58vh;
+  display: grid;
+  align-items: end;
+  padding: clamp(5rem, 12vw, 9rem) clamp(1rem, 7vw, 6rem);
+  color: #fff;
+  background:
+    linear-gradient(90deg, rgba(31, 29, 27, 0.92), rgba(31, 29, 27, 0.45)),
+    #2d2520;
+}
+
+.source-hero.apollo {
+  background:
+    linear-gradient(90deg, rgba(31, 29, 27, 0.88), rgba(31, 29, 27, 0.36)),
+    url("assets/gods/apollo/1.png") center / cover;
+}
+
+.source-hero.dionysus {
+  background:
+    linear-gradient(90deg, rgba(31, 29, 27, 0.88), rgba(31, 29, 27, 0.36)),
+    url("assets/gods/dionysus/image 1.jpg") center / cover;
+}
+
+.source-hero.zeus {
+  background:
+    linear-gradient(90deg, rgba(31, 29, 27, 0.9), rgba(31, 29, 27, 0.42)),
+    url("assets/gods/zeus/Artwork 1,Zeus of Artemision.png") center / cover;
+}
+
+.source-hero.aphrodite-source {
+  background:
+    linear-gradient(90deg, rgba(63, 17, 39, 0.9), rgba(63, 17, 39, 0.35)),
+    url("assets/gods/aphrodite/2.png") center / cover;
+}
+
+.source-hero-inner {
+  max-width: 780px;
+}
+
+.source-hero h1 {
+  margin-bottom: 1rem;
+}
+
+.source-hero p {
+  max-width: 42rem;
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+}
+
+.source-stack {
+  padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 5vw, 4rem);
+  background:
+    linear-gradient(180deg, rgba(255, 249, 241, 1), rgba(247, 239, 227, 1));
+}
+
+.source-panel {
+  width: min(1180px, 100%);
+  margin: 0 auto clamp(1.5rem, 4vw, 3rem);
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.source-panel img {
+  width: 100%;
+  height: auto;
+}
+
+.provided-page {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(3rem, 6vw, 5rem) clamp(1rem, 5vw, 4rem);
+  background:
+    linear-gradient(180deg, rgba(255, 249, 241, 1), rgba(247, 239, 227, 1));
+}
+
+.provided-section {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.85fr) minmax(18rem, 1.15fr);
+  gap: clamp(1rem, 4vw, 2rem);
+  align-items: center;
+  padding: clamp(1rem, 3vw, 1.5rem);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: var(--shadow);
+}
+
+.provided-section.reverse {
+  grid-template-columns: minmax(18rem, 1.15fr) minmax(16rem, 0.85fr);
+}
+
+.provided-section.reverse .provided-images {
+  order: 2;
+}
+
+.provided-section:not(:has(.provided-images)) {
+  display: block;
+}
+
+.provided-images {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.provided-images img {
+  width: 100%;
+  max-height: 520px;
+  border-radius: 6px;
+  object-fit: contain;
+  background: #f7efe3;
+}
+
+.provided-copy {
+  margin: 0;
+  white-space: pre-wrap;
+  color: var(--ink);
+  font: inherit;
+  font-size: 1rem;
 }
 
 .band {
@@ -777,8 +901,14 @@ footer p {
   .timeline-display,
   .duel,
   .file-content,
+  .provided-section,
+  .provided-section.reverse,
   .interactive-links {
     grid-template-columns: 1fr;
+  }
+
+  .provided-section.reverse .provided-images {
+    order: 0;
   }
 
   .timeline-track,
