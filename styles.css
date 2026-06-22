@@ -272,6 +272,12 @@ body[data-page="aphrodite"] {
   --god-bg: #fff0f5;
 }
 
+body[data-page="hera-poseidon"] {
+  --god-a: #4d2a70;
+  --god-b: #0f7b8f;
+  --god-bg: #f4f0f8;
+}
+
 .source-hero.apollo {
   background:
     linear-gradient(90deg, rgba(31, 29, 27, 0.88), rgba(31, 29, 27, 0.36)),
@@ -294,6 +300,12 @@ body[data-page="aphrodite"] {
   background:
     linear-gradient(90deg, rgba(63, 17, 39, 0.9), rgba(63, 17, 39, 0.35)),
     url("assets/gods/aphrodite/2.png") center / cover;
+}
+
+.source-hero.hera-poseidon {
+  background:
+    linear-gradient(90deg, rgba(45, 28, 62, 0.92), rgba(12, 73, 91, 0.42)),
+    url("assets/gods/zeus/Artwork 1,Zeus of Artemision.png") center / cover;
 }
 
 .source-hero-inner {
