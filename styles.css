@@ -434,6 +434,17 @@ body[data-page="poseidon"] {
   color: rgba(255, 255, 255, 0.78);
 }
 
+body[data-page="apollo"] .modern-section .provided-copy,
+body[data-page="apollo"] .modern-section .provided-copy *,
+body[data-page="apollo"] .modern-section .modern-card {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+body[data-page="apollo"] .modern-section h3,
+body[data-page="apollo"] .modern-section .section-label {
+  color: #fff;
+}
+
 .apollo-comparison .comparison-layout {
   display: grid;
   gap: clamp(1rem, 3vw, 1.5rem);
