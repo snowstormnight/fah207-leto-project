@@ -1220,6 +1220,97 @@ input[type="range"] {
   color: #d26494;
 }
 
+.aphro-band {
+  padding-block: clamp(2.75rem, 5vw, 4.25rem);
+}
+
+.aphrodite-flow .provided-copy {
+  max-width: 100%;
+}
+
+.aphro-hero-strip {
+  gap: clamp(1.7rem, 3vw, 3rem);
+}
+
+.aphro-hero-strip h1 {
+  width: min(1100px, 100%);
+}
+
+.aphro-banner {
+  width: min(1160px, 100%);
+  height: clamp(4.7rem, 9vw, 7rem);
+}
+
+.aphro-split {
+  width: min(1180px, 100%);
+  margin-inline: auto;
+  grid-template-columns: minmax(0, 1.05fr) minmax(18rem, 0.95fr);
+}
+
+.aphro-split.reverse {
+  grid-template-columns: minmax(18rem, 0.95fr) minmax(0, 1.05fr);
+}
+
+.aphro-split > img,
+.aphro-split figure img,
+.aphro-stacked-images img,
+.aphro-modern article img {
+  max-height: 620px;
+  object-fit: contain;
+}
+
+.aphro-symbol-grid {
+  width: min(1320px, 100%);
+  margin-inline: auto;
+  align-items: start;
+}
+
+.aphro-symbol-grid article {
+  gap: 1.15rem;
+}
+
+.aphro-symbol-grid img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.aphro-symbol-grid h3 {
+  margin: 0;
+  font-size: clamp(1.45rem, 2.2vw, 2rem);
+}
+
+.aphro-symbol-grid .provided-copy {
+  font-size: clamp(1rem, 1.25vw, 1.16rem);
+  line-height: 1.42;
+}
+
+.aphro-exhibits > h2,
+.aphro-comparison > h2,
+.aphro-links > h2,
+.aphro-modern > h2,
+.aphro-references > h2 {
+  width: min(1180px, 100%);
+  margin-inline: auto;
+}
+
+.aphro-wide {
+  display: block;
+  max-height: 430px;
+  object-fit: cover;
+}
+
+.aphro-links .provided-copy,
+.aphro-references .provided-copy,
+.aphro-modern-intro {
+  width: min(1180px, 100%);
+  margin-inline: auto;
+}
+
+.aphro-modern article h3 {
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
 footer {
   padding: 2rem clamp(1rem, 5vw, 5rem);
   color: #fff;
