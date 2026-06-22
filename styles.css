@@ -1038,6 +1038,188 @@ input[type="range"] {
   font-weight: 700;
 }
 
+.aphrodite-flow {
+  --aphro-bg: #eadde1;
+  --aphro-soft: #e5e5e5;
+  --aphro-text: #50484a;
+  background: var(--aphro-bg);
+  color: var(--aphro-text);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.aphrodite-flow h1,
+.aphrodite-flow h2,
+.aphrodite-flow h3 {
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.aphrodite-flow h1 {
+  max-width: 900px;
+  margin: 0 auto;
+  color: #a90d12;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 1.25;
+  text-align: center;
+}
+
+.aphrodite-flow h2 {
+  color: #a90d12;
+  font-size: clamp(1.8rem, 3vw, 3rem);
+  line-height: 1.15;
+}
+
+.aphrodite-flow h3 {
+  color: #463f40;
+  font-size: clamp(1.3rem, 2vw, 1.8rem);
+  text-align: center;
+}
+
+.aphrodite-flow .provided-copy {
+  color: inherit;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.02rem, 1.45vw, 1.25rem);
+  line-height: 1.45;
+}
+
+.aphro-band {
+  padding: clamp(2.5rem, 5vw, 4.5rem) clamp(1rem, 10vw, 15rem);
+}
+
+.aphro-band:nth-child(odd) {
+  background: var(--aphro-soft);
+}
+
+.aphro-band:nth-child(even) {
+  background: var(--aphro-bg);
+}
+
+.aphro-hero-strip {
+  display: grid;
+  gap: clamp(2rem, 4vw, 4rem);
+  justify-items: center;
+  padding-top: clamp(3rem, 6vw, 5rem);
+}
+
+.aphro-banner {
+  width: min(1180px, 100%);
+  max-height: 7rem;
+  object-fit: cover;
+}
+
+.aphro-call {
+  margin: 0;
+  color: #c95185;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1rem, 1.6vw, 1.35rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.aphro-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(16rem, 0.9fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+
+.aphro-split.reverse {
+  grid-template-columns: minmax(16rem, 0.9fr) minmax(0, 1.1fr);
+}
+
+.aphro-split img,
+.aphro-symbol-grid img,
+.aphro-modern img {
+  width: 100%;
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.aphro-split figure {
+  margin: 0;
+}
+
+.aphro-split figcaption {
+  margin-top: 0.8rem;
+  color: #50484a;
+  font-size: 1.05rem;
+}
+
+.aphro-center {
+  text-align: center;
+}
+
+.aphro-center .provided-copy {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.aphro-quote .provided-copy {
+  color: #d26494;
+  font-style: italic;
+  text-align: center;
+}
+
+.aphro-symbols h2 {
+  margin: 0 0 2.25rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.aphro-symbol-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+}
+
+.aphro-symbol-grid article {
+  display: grid;
+  align-content: start;
+  gap: 1rem;
+}
+
+.aphro-symbol-grid img {
+  aspect-ratio: 1 / 1;
+}
+
+.aphro-symbol-grid .provided-copy {
+  color: #d26494;
+  text-align: center;
+}
+
+.aphro-exhibits h2,
+.aphro-comparison h2,
+.aphro-links h2,
+.aphro-modern h2,
+.aphro-references h2 {
+  margin: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.aphro-exhibits article,
+.aphro-comparison article,
+.aphro-modern article {
+  margin-top: clamp(2rem, 5vw, 4rem);
+}
+
+.aphro-stacked-images {
+  display: grid;
+  gap: 1.6rem;
+}
+
+.aphro-wide {
+  width: min(1240px, 100%);
+  margin: clamp(2.5rem, 5vw, 4.5rem) auto 0;
+}
+
+.aphro-comparison .aphro-center {
+  padding-inline: 0;
+}
+
+.aphro-links .provided-copy,
+.aphro-references .provided-copy,
+.aphro-modern-intro {
+  color: #d26494;
+}
+
 footer {
   padding: 2rem clamp(1rem, 5vw, 5rem);
   color: #fff;
@@ -1074,6 +1256,12 @@ footer p {
   .provided-section,
   .provided-section.reverse,
   .interactive-links {
+    grid-template-columns: 1fr;
+  }
+
+  .aphro-split,
+  .aphro-split.reverse,
+  .aphro-symbol-grid {
     grid-template-columns: 1fr;
   }
 
