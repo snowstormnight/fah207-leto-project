@@ -272,7 +272,7 @@ body[data-page="aphrodite"] {
   --god-bg: #fff0f5;
 }
 
-body[data-page="hera-poseidon"] {
+body[data-page="poseidon"] {
   --god-a: #4d2a70;
   --god-b: #0f7b8f;
   --god-bg: #f4f0f8;
@@ -302,10 +302,10 @@ body[data-page="hera-poseidon"] {
     url("assets/gods/aphrodite/2.png") center / cover;
 }
 
-.source-hero.hera-poseidon {
+.source-hero.poseidon {
   background:
-    linear-gradient(90deg, rgba(45, 28, 62, 0.92), rgba(12, 73, 91, 0.42)),
-    url("assets/gods/zeus/Artwork 1,Zeus of Artemision.png") center / cover;
+    linear-gradient(90deg, rgba(20, 41, 64, 0.92), rgba(12, 73, 91, 0.42)),
+    url("assets/gods/poseidon/lateran-poseidon.png") center 22% / cover;
 }
 
 .source-hero-inner {
@@ -568,9 +568,9 @@ body[data-page="hera-poseidon"] {
   --card-b: #8a7652;
 }
 
-.client-hera {
-  --card-a: #5b2a70;
-  --card-b: #b05f8f;
+.client-poseidon {
+  --card-a: #17445f;
+  --card-b: #1592a6;
 }
 
 .client-dionysus {
