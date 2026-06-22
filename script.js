@@ -28,6 +28,21 @@ const promiseData = {
     mode: "Sacred network",
     title: "Eleusis turns Demeter into a public force.",
     text: "At Eleusis, Demeter is not a private household wish. Her signs become public: torches, gathering, movement, grain, daughter, and return all work together as proof that her power reaches an entire community."
+  },
+  raven: {
+    mode: "Apollo symbol",
+    title: "\"Omens of ill fortune, punished by Apollo.\"",
+    text: "Ravens are birds frequently associated with the prophetic nature of Apollo since they are seen as harbingers and ill omens, often representing impending death. According to legend, ravens were once pure white. A raven reported to Apollo that his mortal lover had been unfaithful, and Apollo was forced to have the woman killed. As punishment for \u2018snitching\u2019, Apollo smited the raven, turning it black."
+  },
+  kithara: {
+    mode: "Apollo symbol",
+    title: "\u201cAn instrument gifted to the world by Apollo.\u201d",
+    text: "Apollo is frequently depicted playing the kithara, a complex type of lyre, which he is said to have created after mastering the lyre, an invention of his half-brother, Hermes. This creation was so great that it allowed Apollo to become patron of the Muses. The kithara is the predecessor of modern string instruments, including the guitar, which even gets its name from the kithara."
+  },
+  laurel: {
+    mode: "Apollo symbol",
+    title: "\u201cA symbol of victory that crowns Apollo\u2019s head.\u201d",
+    text: "One of the symbols most strongly associated with Apollo is the laurel wreath. The link between Apollo and the laurel can be traced back to the story of Daphne, a nymph Apollo pursued while under Eros\u2019 love spell, who fled and was changed into a laurel tree to escape him. In her honour, Apollo turned the laurel tree evergreen and wove a wreath from its leaves. Laurel wreaths have come to symbolize victory; they are often awarded to the winners of athletic competitions, and are frequently used in heraldry."
   }
 };
 
