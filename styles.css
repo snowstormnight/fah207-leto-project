@@ -1311,6 +1311,134 @@ input[type="range"] {
   text-align: left;
 }
 
+.aphrodite-flow {
+  background:
+    linear-gradient(180deg, rgba(255, 246, 249, 0.65), rgba(234, 221, 225, 0.95)),
+    var(--aphro-bg);
+}
+
+.aphro-hero-strip {
+  position: relative;
+  min-height: 52vh;
+  align-content: center;
+  overflow: hidden;
+}
+
+.aphro-hero-strip::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(234, 221, 225, 0.2), rgba(234, 221, 225, 0.86)),
+    url("raw_material/APHRODITE/1.png") center / cover;
+  opacity: 0.18;
+}
+
+.aphro-hero-strip > * {
+  position: relative;
+}
+
+.aphro-hero-strip h1 {
+  padding: clamp(0.8rem, 1.8vw, 1.2rem) clamp(1rem, 3vw, 2rem);
+  border-block: 1px solid rgba(169, 13, 18, 0.18);
+  background: rgba(229, 229, 229, 0.68);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+}
+
+.aphro-call {
+  padding: 0.9rem 1.25rem;
+  border: 1px solid rgba(201, 81, 133, 0.18);
+  border-radius: 999px;
+  background: rgba(255, 246, 249, 0.74);
+}
+
+.aphro-split,
+.aphro-symbol-grid article,
+.aphro-modern article,
+.aphro-links .provided-copy,
+.aphro-references .provided-copy {
+  border: 1px solid rgba(169, 13, 18, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 18px 45px rgba(93, 50, 62, 0.1);
+}
+
+.aphro-split,
+.aphro-symbol-grid article,
+.aphro-modern article {
+  padding: clamp(1rem, 2.5vw, 1.6rem);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.58), rgba(255, 246, 249, 0.42));
+}
+
+.aphro-center .provided-copy,
+.aphro-quote .provided-copy {
+  width: min(1120px, 100%);
+  padding: clamp(1.25rem, 3vw, 2rem);
+  border: 1px solid rgba(201, 81, 133, 0.14);
+  border-radius: 8px;
+  background: rgba(255, 246, 249, 0.58);
+  box-shadow: 0 14px 34px rgba(93, 50, 62, 0.08);
+}
+
+.aphro-symbols h2,
+.aphro-exhibits > h2,
+.aphro-comparison > h2,
+.aphro-links > h2,
+.aphro-modern > h2,
+.aphro-references > h2 {
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.14em;
+}
+
+.aphro-symbol-grid article {
+  justify-items: center;
+}
+
+.aphro-symbol-grid img {
+  border: 8px solid rgba(255, 246, 249, 0.72);
+  box-shadow: 0 16px 34px rgba(93, 50, 62, 0.14);
+}
+
+.aphro-split > img,
+.aphro-split figure img,
+.aphro-stacked-images img,
+.aphro-modern article img,
+.aphro-wide {
+  border: 8px solid rgba(255, 246, 249, 0.72);
+  box-shadow: 0 16px 34px rgba(93, 50, 62, 0.14);
+}
+
+.aphro-split figcaption {
+  padding-inline: 0.25rem;
+  font-style: italic;
+}
+
+.aphro-wide {
+  border-radius: 8px;
+}
+
+.aphro-links .provided-copy,
+.aphro-references .provided-copy {
+  padding: clamp(1.25rem, 3vw, 2rem);
+  background: rgba(255, 246, 249, 0.58);
+}
+
+.aphro-modern article {
+  align-items: start;
+}
+
+.aphro-modern article > div {
+  display: grid;
+  gap: 1rem;
+}
+
+.aphro-modern article h3 {
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid rgba(169, 13, 18, 0.18);
+}
+
 footer {
   padding: 2rem clamp(1rem, 5vw, 5rem);
   color: #fff;
