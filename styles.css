@@ -1880,6 +1880,47 @@ body[data-page="dionysus"] .dionysus-modern-section h2 {
   color: #fff;
 }
 
+body[data-page="dionysus"] .dionysus-comparison-section {
+  color: #fff;
+  background:
+    radial-gradient(circle at 80% 12%, rgba(191, 147, 226, 0.22), transparent 24rem),
+    linear-gradient(135deg, #180f22, #2b173d 62%, #0e302c);
+}
+
+body[data-page="dionysus"] .dionysus-comparison-card {
+  width: min(1120px, 100%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(18rem, 0.95fr) minmax(20rem, 1.05fr);
+  gap: clamp(1.2rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(1.1rem, 3vw, 2rem);
+  border: 1px solid rgba(191, 147, 226, 0.28);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(31, 138, 112, 0.08));
+  box-shadow: 0 28px 76px rgba(0, 0, 0, 0.3);
+}
+
+body[data-page="dionysus"] .dionysus-comparison-card figure {
+  margin: 0;
+}
+
+body[data-page="dionysus"] .dionysus-comparison-card img {
+  width: 100%;
+  max-height: 520px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 52px rgba(0, 0, 0, 0.3);
+}
+
+body[data-page="dionysus"] .dionysus-comparison-card .provided-copy {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: clamp(1rem, 1.45vw, 1.16rem);
+  line-height: 1.78;
+}
+
 body[data-page="dionysus"] .dionysus-modern-section {
   color: #fff;
   background:
@@ -1975,7 +2016,8 @@ body[data-page="dionysus"] .references .provided-copy {
   }
 
   body[data-page="dionysus"] .dionysus-modern-pair,
-  body[data-page="dionysus"] .dionysus-modern-pair.reverse {
+  body[data-page="dionysus"] .dionysus-modern-pair.reverse,
+  body[data-page="dionysus"] .dionysus-comparison-card {
     grid-template-columns: 1fr;
   }
 }
