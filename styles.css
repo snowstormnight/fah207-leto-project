@@ -445,6 +445,238 @@ body[data-page="apollo"] .modern-section .section-label {
   color: #fff;
 }
 
+body[data-page="zeus"] {
+  background:
+    radial-gradient(circle at 78% 12%, rgba(201, 147, 44, 0.18), transparent 30rem),
+    linear-gradient(180deg, #eef2f5, #f9f4ea 52%, #e9edf2);
+}
+
+body[data-page="zeus"] .source-hero.zeus {
+  min-height: 70vh;
+  background:
+    linear-gradient(90deg, rgba(10, 19, 31, 0.94), rgba(32, 47, 70, 0.62) 48%, rgba(140, 118, 82, 0.22)),
+    url("assets/gods/zeus/Artwork 1,Zeus of Artemision.png") center / cover;
+}
+
+body[data-page="zeus"] .zeus-brief {
+  color: #f7f1e4;
+  background:
+    linear-gradient(135deg, rgba(18, 31, 48, 0.98), rgba(54, 49, 39, 0.96)),
+    #162333;
+}
+
+body[data-page="zeus"] .zeus-brief .provided-copy,
+body[data-page="zeus"] .zeus-comparison-section .provided-copy,
+body[data-page="zeus"] .zeus-exhibits .provided-copy,
+body[data-page="zeus"] .references .provided-copy {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+body[data-page="zeus"] .zeus-comparison-section {
+  color: #f8f3e9;
+  background:
+    radial-gradient(circle at 92% 10%, rgba(244, 198, 111, 0.18), transparent 24rem),
+    linear-gradient(145deg, #111d2d, #2b2b2b 64%, #4a3925);
+}
+
+body[data-page="zeus"] .zeus-comparison-section .provided-copy {
+  width: min(1040px, 100%);
+  margin: 0 auto;
+  padding: clamp(1.4rem, 4vw, 2.4rem);
+  border: 1px solid rgba(244, 198, 111, 0.28);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.08), rgba(244, 198, 111, 0.1));
+  box-shadow: 0 28px 70px rgba(5, 10, 18, 0.35);
+  font-size: clamp(1rem, 1.6vw, 1.16rem);
+}
+
+body[data-page="zeus"] .zeus-exhibits {
+  background:
+    linear-gradient(180deg, #f6f2ea, #dce4ec 48%, #172234 48%, #101925);
+}
+
+body[data-page="zeus"] .zeus-exhibits .section-heading {
+  color: var(--ink);
+}
+
+body[data-page="zeus"] .zeus-exhibits .section-label {
+  color: #b07d25;
+}
+
+body[data-page="zeus"] .zeus-exhibits .file-list {
+  gap: clamp(1.4rem, 4vw, 3rem);
+}
+
+body[data-page="zeus"] .zeus-exhibits .campaign-file {
+  border-color: rgba(244, 198, 111, 0.22);
+  background:
+    linear-gradient(135deg, rgba(18, 31, 48, 0.96), rgba(39, 41, 43, 0.96));
+  box-shadow: 0 24px 70px rgba(5, 10, 18, 0.28);
+}
+
+body[data-page="zeus"] .zeus-exhibits .file-content {
+  grid-template-columns: minmax(18rem, 0.95fr) minmax(20rem, 1.05fr);
+  align-items: start;
+}
+
+body[data-page="zeus"] .zeus-exhibits .provided-images {
+  position: sticky;
+  top: 5.5rem;
+  align-self: start;
+}
+
+body[data-page="zeus"] .zeus-exhibits .provided-images img {
+  aspect-ratio: 4 / 5;
+  border: 1px solid rgba(244, 198, 111, 0.28);
+  object-fit: cover;
+  background: #e8dfcf;
+  box-shadow: 0 20px 42px rgba(0, 0, 0, 0.25);
+}
+
+body[data-page="zeus"] .zeus-modern-card {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(244, 198, 111, 0.18), transparent 22rem),
+    linear-gradient(135deg, rgba(43, 34, 25, 0.98), rgba(11, 19, 31, 0.98)) !important;
+}
+
+body[data-page="zeus"] .zeus-modern-section {
+  color: #fff;
+  background:
+    radial-gradient(circle at 82% 12%, rgba(244, 198, 111, 0.2), transparent 24rem),
+    linear-gradient(135deg, #0f1a29, #322718 72%, #101925);
+}
+
+body[data-page="zeus"] .zeus-modern-standalone {
+  width: min(1000px, 100%);
+  margin: 0 auto;
+  padding: clamp(1.4rem, 4vw, 2.6rem);
+  border: 1px solid rgba(244, 198, 111, 0.32);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(244, 198, 111, 0.12));
+  box-shadow: 0 28px 70px rgba(5, 10, 18, 0.34);
+}
+
+body[data-page="zeus"] .zeus-modern-standalone .provided-copy {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(1.05rem, 1.65vw, 1.22rem);
+  line-height: 1.75;
+}
+
+body[data-page="zeus"] .references {
+  color: #fff;
+  background: #111925;
+}
+
+body[data-page="poseidon"] {
+  background:
+    radial-gradient(circle at 12% 14%, rgba(37, 143, 164, 0.2), transparent 28rem),
+    linear-gradient(180deg, #eef7f8, #f6f0fb 44%, #eaf6f8);
+}
+
+body[data-page="poseidon"] .source-hero.poseidon {
+  min-height: 70vh;
+  background:
+    linear-gradient(90deg, rgba(6, 29, 44, 0.95), rgba(14, 86, 111, 0.66) 48%, rgba(77, 42, 112, 0.28)),
+    url("assets/gods/poseidon/lateran-poseidon.png") center 18% / cover;
+}
+
+body[data-page="poseidon"] .poseidon-brief {
+  color: #063146;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.94), rgba(217, 241, 244, 0.94));
+}
+
+body[data-page="poseidon"] .poseidon-scroll {
+  color: #f5fbff;
+  background:
+    linear-gradient(180deg, #061d2c, #0e5367 52%, #3d2361);
+}
+
+body[data-page="poseidon"] .poseidon-scroll .file-list {
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+body[data-page="poseidon"] .poseidon-scroll .campaign-file {
+  border-color: rgba(167, 231, 242, 0.22);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.04));
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.25);
+}
+
+body[data-page="poseidon"] .poseidon-scroll .file-content {
+  grid-template-columns: minmax(16rem, 0.9fr) minmax(20rem, 1.1fr);
+  align-items: start;
+}
+
+body[data-page="poseidon"] .poseidon-scroll .provided-images {
+  position: sticky;
+  top: 5.5rem;
+  align-self: start;
+}
+
+body[data-page="poseidon"] .poseidon-scroll .provided-images img {
+  aspect-ratio: 3 / 4;
+  border: 1px solid rgba(167, 231, 242, 0.28);
+  object-fit: contain;
+  background: #d6edf1;
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.26);
+}
+
+body[data-page="poseidon"] .poseidon-scroll .provided-copy,
+body[data-page="poseidon"] .poseidon-comparison-section .provided-copy,
+body[data-page="poseidon"] .poseidon-modern-section .provided-copy {
+  color: rgba(255, 255, 255, 0.86);
+}
+
+body[data-page="poseidon"] .references {
+  color: var(--ink);
+  background:
+    linear-gradient(180deg, #f6fbfc, #fff9f1);
+}
+
+body[data-page="poseidon"] .references .provided-copy {
+  color: var(--ink);
+}
+
+body[data-page="poseidon"] .poseidon-comparison-section {
+  color: #f4fbff;
+  background:
+    radial-gradient(circle at 12% 16%, rgba(91, 207, 224, 0.18), transparent 24rem),
+    linear-gradient(145deg, #102437, #123f52 58%, #2a1d3d);
+}
+
+body[data-page="poseidon"] .poseidon-comparison-section .provided-copy {
+  width: min(1060px, 100%);
+  margin: 0 auto;
+  padding: clamp(1.35rem, 4vw, 2.3rem);
+  border: 1px solid rgba(167, 231, 242, 0.25);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(91, 207, 224, 0.08));
+  box-shadow: 0 28px 70px rgba(0, 0, 0, 0.24);
+  font-size: clamp(1rem, 1.5vw, 1.12rem);
+}
+
+body[data-page="poseidon"] .poseidon-modern-section {
+  background:
+    linear-gradient(180deg, #3d2361, #09293e);
+}
+
+body[data-page="poseidon"] .poseidon-modern-card .file-content {
+  grid-template-columns: minmax(18rem, 1fr) minmax(12rem, 0.55fr);
+}
+
+body[data-page="poseidon"] .poseidon-modern-card .provided-images {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+body[data-page="poseidon"] .poseidon-modern-card .provided-images img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
 .apollo-comparison .comparison-layout {
   display: grid;
   gap: clamp(1rem, 3vw, 1.5rem);
@@ -1499,6 +1731,15 @@ footer p {
     order: 0;
   }
 
+  body[data-page="zeus"] .zeus-exhibits .provided-images,
+  body[data-page="poseidon"] .poseidon-scroll .provided-images {
+    position: static;
+  }
+
+  body[data-page="poseidon"] .poseidon-modern-card .provided-images {
+    grid-template-columns: 1fr;
+  }
+
   .timeline-track,
   .client-grid,
   .method-grid,
@@ -1544,5 +1785,197 @@ footer p {
 
   h1 {
     font-size: 3.8rem;
+  }
+}
+
+body[data-page="poseidon"] #comparison.poseidon-comparison-section .provided-copy {
+  color: rgba(255, 255, 255, 0.9) !important;
+}
+
+body[data-page="dionysus"] {
+  background:
+    radial-gradient(circle at 14% 8%, rgba(126, 68, 178, 0.2), transparent 28rem),
+    radial-gradient(circle at 86% 28%, rgba(31, 138, 112, 0.18), transparent 26rem),
+    linear-gradient(180deg, #f4f1ec, #ece6ef 45%, #17111f);
+}
+
+body[data-page="dionysus"] .source-hero.dionysus {
+  min-height: 70vh;
+  background:
+    linear-gradient(90deg, rgba(18, 11, 26, 0.94), rgba(78, 34, 102, 0.66) 50%, rgba(31, 138, 112, 0.2)),
+    url("assets/gods/dionysus/image 1.jpg") center / cover;
+}
+
+body[data-page="dionysus"] .dionysus-brief {
+  color: #f9f1ff;
+  background:
+    radial-gradient(circle at 86% 12%, rgba(31, 138, 112, 0.24), transparent 24rem),
+    linear-gradient(135deg, #1a1024, #3f235f 68%, #163d37);
+}
+
+body[data-page="dionysus"] .dionysus-brief-card {
+  width: min(960px, 100%);
+  margin: clamp(1.5rem, 4vw, 2.5rem) auto 0;
+  padding: clamp(1.25rem, 4vw, 2.4rem);
+  border: 1px solid rgba(191, 147, 226, 0.28);
+  border-radius: 8px;
+  background:
+    radial-gradient(circle at 18% 0%, rgba(191, 147, 226, 0.22), transparent 18rem),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.13), rgba(31, 138, 112, 0.12));
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.22);
+}
+
+body[data-page="dionysus"] .dionysus-brief-card .provided-copy {
+  color: rgba(255, 255, 255, 0.9);
+  max-width: 760px;
+  margin-inline: auto;
+  text-align: center;
+  font-size: clamp(1.08rem, 1.8vw, 1.32rem);
+  line-height: 1.85;
+}
+
+body[data-page="dionysus"] .dionysus-exhibits {
+  color: #fbf7ff;
+  background:
+    linear-gradient(180deg, #1a1024, #271637 44%, #103832);
+}
+
+body[data-page="dionysus"] .dionysus-exhibits .file-list {
+  gap: clamp(1.5rem, 4vw, 3rem);
+}
+
+body[data-page="dionysus"] .dionysus-exhibits .campaign-file {
+  border-color: rgba(191, 147, 226, 0.24);
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.09), rgba(31, 138, 112, 0.08));
+  box-shadow: 0 26px 72px rgba(0, 0, 0, 0.3);
+}
+
+body[data-page="dionysus"] .dionysus-exhibits .file-content {
+  grid-template-columns: minmax(18rem, 0.9fr) minmax(20rem, 1.1fr);
+  align-items: start;
+}
+
+body[data-page="dionysus"] .dionysus-exhibits .provided-images {
+  position: sticky;
+  top: 5.5rem;
+  align-self: start;
+}
+
+body[data-page="dionysus"] .dionysus-exhibits .provided-images img {
+  aspect-ratio: 4 / 5;
+  border: 1px solid rgba(191, 147, 226, 0.3);
+  object-fit: contain;
+  background: #24172f;
+  box-shadow: 0 22px 52px rgba(0, 0, 0, 0.32);
+}
+
+body[data-page="dionysus"] .dionysus-exhibits .provided-copy,
+body[data-page="dionysus"] .dionysus-modern-section .provided-copy {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+body[data-page="dionysus"] .dionysus-exhibits h3,
+body[data-page="dionysus"] .dionysus-modern-section h2 {
+  color: #fff;
+}
+
+body[data-page="dionysus"] .dionysus-modern-section {
+  color: #fff;
+  background:
+    radial-gradient(circle at 12% 18%, rgba(31, 138, 112, 0.24), transparent 24rem),
+    radial-gradient(circle at 88% 0%, rgba(126, 68, 178, 0.26), transparent 26rem),
+    linear-gradient(145deg, #101f1d, #271637 62%, #140d1c);
+}
+
+body[data-page="dionysus"] .dionysus-modern-card {
+  width: min(1080px, 100%);
+  margin: 0 auto;
+  padding: clamp(1.4rem, 4vw, 2.6rem);
+  border: 1px solid rgba(191, 147, 226, 0.28);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(31, 138, 112, 0.09));
+  box-shadow: 0 28px 76px rgba(0, 0, 0, 0.32);
+}
+
+body[data-page="dionysus"] .dionysus-modern-card .provided-copy {
+  font-size: clamp(1rem, 1.55vw, 1.16rem);
+  line-height: 1.78;
+}
+
+body[data-page="dionysus"] .dionysus-modern-grid {
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+}
+
+body[data-page="dionysus"] .dionysus-modern-pair {
+  display: grid;
+  grid-template-columns: minmax(18rem, 1fr) minmax(18rem, 0.95fr);
+  gap: clamp(1.2rem, 4vw, 3rem);
+  align-items: center;
+  padding: clamp(1.1rem, 3vw, 2rem);
+  border: 1px solid rgba(191, 147, 226, 0.22);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.09), rgba(31, 138, 112, 0.07));
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.24);
+}
+
+body[data-page="dionysus"] .dionysus-modern-pair.reverse {
+  grid-template-columns: minmax(18rem, 0.9fr) minmax(18rem, 1.1fr);
+}
+
+body[data-page="dionysus"] .dionysus-modern-pair figure {
+  margin: 0;
+}
+
+body[data-page="dionysus"] .dionysus-modern-pair img {
+  width: 100%;
+  max-height: 430px;
+  border-radius: 8px;
+  object-fit: contain;
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: 0 18px 46px rgba(0, 0, 0, 0.28);
+}
+
+body[data-page="dionysus"] .dionysus-modern-pair figcaption {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(0.95rem, 1.2vw, 1.08rem);
+  text-align: center;
+}
+
+body[data-page="dionysus"] .dionysus-modern-pair figcaption a {
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.18em;
+}
+
+body[data-page="dionysus"] .dionysus-modern-pair .provided-copy {
+  color: rgba(255, 255, 255, 0.88);
+  font-size: clamp(1rem, 1.35vw, 1.12rem);
+  line-height: 1.78;
+}
+
+body[data-page="dionysus"] .references {
+  color: #f8f3ff;
+  background:
+    linear-gradient(180deg, #140d1c, #0f1e1d);
+}
+
+body[data-page="dionysus"] .references .provided-copy {
+  color: rgba(255, 255, 255, 0.84);
+}
+
+@media (max-width: 860px) {
+  body[data-page="dionysus"] .dionysus-exhibits .provided-images {
+    position: static;
+  }
+
+  body[data-page="dionysus"] .dionysus-modern-pair,
+  body[data-page="dionysus"] .dionysus-modern-pair.reverse {
+    grid-template-columns: 1fr;
   }
 }
