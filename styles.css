@@ -311,7 +311,7 @@ body[data-page="poseidon"] {
 .source-hero.demeter-source {
   background:
     linear-gradient(90deg, rgba(31, 39, 18, 0.92), rgba(56, 54, 28, 0.42)),
-    url("https://upload.wikimedia.org/wikipedia/commons/2/20/Great_Eleusinian_Relief.jpg") center 18% / cover;
+    url("raw_material/demeter/Great%20Eleusinian%20Relief.jpg") center 18% / cover;
 }
 
 .source-hero-inner {
@@ -884,6 +884,10 @@ body[data-page="poseidon"] {
   background:
     linear-gradient(135deg, rgba(20, 127, 123, 0.1), rgba(199, 54, 95, 0.12)),
     #fff;
+}
+
+.promise-copy[hidden] {
+  display: none;
 }
 
 .promise-copy p:last-child {
