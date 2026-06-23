@@ -2080,6 +2080,10 @@ body[data-page="demeter"] .demeter-symbols .promise-copy {
     linear-gradient(135deg, rgba(235, 242, 220, 0.95), rgba(255, 245, 220, 0.95));
 }
 
+body[data-page="demeter"] .demeter-symbols .promise-copy h3 {
+  color: #243a20;
+}
+
 body[data-page="demeter"] .demeter-symbols .promise-copy .provided-copy {
   color: #42512f;
 }
